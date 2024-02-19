@@ -1,0 +1,15 @@
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../../assets/bg.avif);
+    background-size: cover;
+    height: 60vh;
+    .search{
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+    .text{
+        color: white;
+    }
+}
