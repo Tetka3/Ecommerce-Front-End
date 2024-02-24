@@ -1,6 +1,7 @@
 import Footer from "../../components/footer/Footer";
 import Hero from "../../components/hero/Hero";
 import Navbar from "../../components/navbar/Navbar";
+import Announcement from "../../components/Announcement";
 import Pagination from "../../components/pagination/Pagination";
 import "./home.scss";
 import { useState, useEffect } from 'react';
@@ -16,14 +17,14 @@ const Home = () => {
     useEffect (() => {
         const fetchAllItems = async () => {
             try{
-                 const res = await axios.get("http://localhost:8800/items")
-                 setItems(res.data)
+                 const res = await axios.get("http://localhost:8800/items");
+                 setItems(res.data);
                  
             }catch(err){
-                console.log(err)
+                console.log(err);
             }
         }
-        fetchAllItems()
+        fetchAllItems();
     }, [])
 
     const lastPostIndex = currentPage * postsPerPage;
@@ -33,6 +34,7 @@ const Home = () => {
   return (
     <div className="home">
         <Navbar />
+        <Announcement />
         <Hero />
         <ItemsList items={currentPosts} />        
         <Pagination totalPosts={items.length}
@@ -45,4 +47,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;

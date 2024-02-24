@@ -14,7 +14,7 @@ const Register = () => {
         <label>Repeat Password</label>
         <input type="text" />
         <button >Register</button>        
-      </div> 
+    </div> 
   )
 }
 
