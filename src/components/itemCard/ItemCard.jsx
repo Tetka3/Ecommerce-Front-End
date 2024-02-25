@@ -1,12 +1,12 @@
 import "./itemCard.scss";
+import { Link } from "react-router-dom";
 
 const ItemCard = ({ item }) => {
   return (    
       <div className="item" key={item.id}>
-        {item.cover && <img src={item.cover} alt="card" className="imgcard"/>}
-        <p>{item.title}</p>
-        {/* <p>{item.description}</p>  */}
-        <button to="/add to cart">Shop Now</button>       
+        {item.cover && <Link to={`/product/${item.id}`}><img src={item.cover} alt="card" /></Link>}
+        <p>{item.title}</p>        
+        <button><Link to={`/product/${item.id}`} style={{textDecoration:"none"}}>Shop Now</Link></button>       
       </div>    
   )
 }

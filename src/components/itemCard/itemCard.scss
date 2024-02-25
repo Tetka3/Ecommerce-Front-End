@@ -2,28 +2,32 @@
     display: flex;
     flex-direction: column;
     align-items: center; 
-    background-color: rgb(192, 192, 192);
-    width: 100%;
+    flex: 1;
+    min-width: 200px;
+    height: 250px;
+    object-fit: cover;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    transition: all 0.3s ease;
+    &:hover{
+        background-color: rgb(1,245,212);
+        transform: scale(1.1);
+    }    
     
-    /* flex: 1; */
-    /* gap: 10px; */
-    /* padding: 10px; */
-    /* flex: 1; */
-    .imgcard{
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-    }   
+    img{
+       /* height: 75%; */
+       /* width: 80%; */
+       cursor: pointer;
+              
+    }       
     
-    p{
-        color: green;        
-    }
     button{
-        color: orangered;
+        color: teal;
         padding: 8px;
         border-radius: 5px;
         border: none;
-        background-color: teal;
-        cursor: pointer;
+        background-color: orange;
+        cursor: pointer;        
     }
 }

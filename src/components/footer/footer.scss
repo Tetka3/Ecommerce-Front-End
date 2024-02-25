@@ -1,4 +1,25 @@
 .footer{
-    background-color: blue;
+    background-color: rgb(192,235,148);
     height: 30vh;
+    margin-top: 20px;
+    display: flex;
+    padding-top: 15px;
+    color: blue;
+    p{
+        flex: 1;
+        color: rgb(131, 97, 35);
+    }
+    .links{
+        flex: 2;
+        
+        li{
+            list-style: none;            
+            cursor: pointer;
+            margin-bottom: 5px;
+            
+        }
+    }
+    .contact{
+        flex: 2;
+    }
 }
