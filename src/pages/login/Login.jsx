@@ -8,7 +8,6 @@ const Login = () => {
 
   const [login, setLogin] = useState({
     username: "",
-    email: "",
     password: "",    
 });
 
@@ -34,8 +33,8 @@ const handleClick = async (e) => {
       <div className="inputs">
         <label>Username</label>
         <input type="text" onChange={handleChange} name='username'/>
-        <label>E-mail</label>
-        <input type="text" onChange={handleChange} name='email'/>
+        {/* <label>E-mail</label>
+        <input type="text" onChange={handleChange} name='email'/> */}
         <label>Password</label>
         <input type="password" onChange={handleChange} name='password'/>        
         <button onClick={handleClick}>Login</button> 

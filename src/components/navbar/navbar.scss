@@ -5,8 +5,7 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid rgb(209, 208, 208);
-   
-    
+    font-family: cursive;     
 
     .left{
         flex: 1;
@@ -16,12 +15,21 @@
     }
     .right{
         flex: 1;
-        text-align: right;
+        text-align: left;
         display: flex;
         .first{
             flex: 1;
             justify-content: end;
             align-items: center;
+            span{
+                &:hover{
+                    background-color: rgb(1,52,47);
+                    color: white;
+                    border-radius: 5px;
+                    padding: 5px;
+                }
+            }            
+            
         }
         .second{
             flex: 1;
@@ -31,8 +39,15 @@
                 cursor: pointer;
                 display: inline;
                 margin-left: 10px;
+                padding: 5px;
+                &:hover{
+                    background-color: rgb(1,52,47);
+                    color: white;
+                    border-radius: 5px;
+                }
                 
             }
+            
         }
         
     }

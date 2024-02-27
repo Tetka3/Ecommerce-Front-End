@@ -11,7 +11,7 @@ const Footer = () => {
           <li><Link to="/investors" style={{textDecoration: 'none'}}>Investor's Relations</Link></li>
         </div>
         <div className="contact">
-          <h3>ShoppingFy</h3>
+        <Link to="/" style={{textDecoration: 'none'}}><h3>ShoppingFy</h3></Link>
           <p>Address</p>
         </div>
         

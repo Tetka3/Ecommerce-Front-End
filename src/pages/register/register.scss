@@ -7,6 +7,11 @@
     background-image: url(../../assets/bg.jpg);
     background-size: cover;
     height: 100vh;
+    p{
+        color: white;
+        background-color: teal;
+        padding: 10px;
+    }
     .inputs{
         display: flex;
         flex-direction: column;

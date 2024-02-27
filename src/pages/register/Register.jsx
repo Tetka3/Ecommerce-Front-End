@@ -31,6 +31,7 @@ const handleClick = async (e) => {
 
   return (
     <div className="register">
+      <p>Create an Account</p>
       <div className="inputs">
         <label>Username</label>
         <input type="text" onChange={handleChange} name='username' />

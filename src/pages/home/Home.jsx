@@ -11,7 +11,7 @@ import ItemsList from "../../components/itemsList/ItemsList";
 const Home = () => {
   const [items, setItems] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [postsPerPage, setPostsPerPage] = useState(8);
+  const [postsPerPage, setPostsPerPage] = useState(12);
     
 
     useEffect (() => {
