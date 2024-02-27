@@ -1,33 +1,58 @@
 .footer{
-    background-color: rgb(192,235,148);
     height: 30vh;
     margin-top: 20px;
     display: flex;
     padding-top: 15px;
-    color: blue;
+    background: linear-gradient(rgb(2,234,205), gray);
     p{
         flex: 1;
         color: rgb(131, 97, 35);
     }
     .links{
         flex: 2;
-        color: white;
-        
+                        
         li{
             list-style: none;            
             cursor: pointer;
-            margin-bottom: 5px;
-            color: white;
+            margin-bottom: 5px;            
             &:hover{
                 background-color: rgb(1,52,47);
                 border-radius: 5px;
                 padding: 5px;
                 max-width: fit-content;
-            }
-            
+                color: white;
+            }            
         }
     }
-    .contact{
+    .address{
         flex: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .contact{
+            p{
+                color: white;
+            }
+        }
+        .payment{
+            margin-bottom: 30px;
+            display: flex;
+            transition: all 0.3s ease;
+            span{
+                align-items: center;
+                color: orange;
+            }
+            
+            img{
+                width: 40px;
+                height: 30px;
+                margin-left: 5px;
+                object-fit: fit;
+                
+                &:hover{                    
+                    transform: scaleX(1.2);
+                }
+            }
+        }
     }
 }
